@@ -13,7 +13,7 @@ const storeUpload = async (upload) => {
   let path = `uploads/${id}-${filename}`;
   await stream.pipe(createWriteStream(path));
   // path = `${URL}/server/${path}`;
-  path = `https://env-5048888.jelastic.metropolia.fi/server/${path}`;
+  path = `https://env-5048888.jelastic.metropolia.fi/uploads/${path}`;
   return path;
 };
 
