@@ -12,7 +12,8 @@ const storeUpload = async (upload) => {
   const id = shortid.generate();
   let path = `uploads/${id}-${filename}`;
   await stream.pipe(createWriteStream(path));
-  path = `${URL}/server/${path}`;
+  // path = `${URL}/server/${path}`;
+  path = `https://env-5048888.jelastic.metropolia.fi/server/${path}`;
   return path;
 };
 
