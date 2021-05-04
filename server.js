@@ -47,7 +47,7 @@ const app = express();
     }
 
     app.use(AuthMiddleware);
-    app.use("/uploads", express.static("./uploads"));
+    app.use("/", express.static("./uploads"));
     const server = new ApolloServer({
       typeDefs,
       resolvers,
