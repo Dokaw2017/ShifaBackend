@@ -1,4 +1,5 @@
-import { gql } from "apollo-server-express";
+import pkg from "apollo-server-express";
+const { gql } = pkg;
 
 export default gql`
   extend type Query {
