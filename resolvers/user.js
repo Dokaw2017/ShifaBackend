@@ -1,6 +1,6 @@
 import pkg from "apollo-server-express";
 const { ApolloError } = pkg;
-import { hash, compare } from "bcrypt";
+const { hash, compare } = pkg;
 import User from "../models/User.js";
 import { issueToken, serializeUser } from "../utils/authjwt.js";
 import {
