@@ -2,7 +2,7 @@ import Post from "../models/Post.js";
 import pkg from "apollo-server-express";
 const { ApolloError } = pkg;
 import { NewPostvalidationRules } from "../validators/postValidator.js";
-import { UserInputError } from "apollo-server-express";
+const { UserInputError } = pkg;
 import { createWriteStream } from "fs";
 import { URL } from "../config/index.js";
 import shortid from "shortid";
