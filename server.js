@@ -1,4 +1,5 @@
-import { ApolloServer, gql } from "apollo-server-express";
+import pkg from "apollo-server-express";
+const { ApolloServer, gql } = pkg;
 import express from "express";
 import { PORT, IN_PROD } from "./config/index.js";
 import connectMongo from "./db/db.js";
