@@ -1,5 +1,6 @@
 import Post from "../models/Post.js";
-import { ApolloError } from "apollo-server-express";
+import pkg from "apollo-server-express";
+const { ApolloError } = pkg;
 import { NewPostvalidationRules } from "../validators/postValidator.js";
 import { UserInputError } from "apollo-server-express";
 import { createWriteStream } from "fs";
