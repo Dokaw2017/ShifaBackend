@@ -1,5 +1,5 @@
-import { config } from "dotenv";
-
+import pkg from "dotenv";
+const { config } = pkg;
 const { parsed } = config();
 
 export const {
