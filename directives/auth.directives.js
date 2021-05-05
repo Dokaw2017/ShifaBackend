@@ -1,6 +1,6 @@
 import { defaultFieldResolver } from "graphql";
-import { ApolloError, SchemaDirectiveVisitor } from "apollo-server-express";
-
+import pkg from "apollo-server-express";
+const { ApolloError, SchemaDirectiveVisitor } = pkg;
 export class isAuthDirective extends SchemaDirectiveVisitor {
   visitFieldDefinition(field) {
     const { resolve = defaultFieldResolver } = field;
